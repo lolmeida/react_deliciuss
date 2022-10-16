@@ -1,28 +1,18 @@
-import React, { useEffect, useState } from "react";
+//import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 
 import { Wrappers, Card, Gradient } from "../styles/Styles";
+import { RunApiCall } from "../tools/Funcs";
 
 function Veggie() {
-  const [veggie, setVeggie] = useState([]);
-  useEffect(() => {apiCall();}, []);
 
-  const apiCall = async () => {
-    const check = localStorage.getItem("veggie");
-    if (check) {
-      setVeggie(JSON.parse(check));
-    } else {
-      const url =
-        "https://api.spoonacular.com/recipes/random?apiKey=88cbb41354b04d13858d7f377e338113&number=9&tags=vegetarian";
-      //const api = await fetch(`${recipesApi}/random?apiKey=${process.env.API_KEY}`);
-      const api = await fetch(url);
-      const data = await api.json();
-      localStorage.setItem("veggie", JSON.stringify(data.recipes));
-      setVeggie(data.recipes);
-      //console.log(data);
-    }
-  };
+const obj = {
+  'urlApi':"https://api.spoonacular.com/recipes/random?apiKey=88cbb41354b04d13858d7f377e338113&number=9&tags=vegetarian",
+  'localStorageName': "veggie",
+};
+
+const veggie = RunApiCall(obj);
 
   return (
     <Wrappers>

@@ -41,41 +41,67 @@ p {
   margin: 2rem, 0rem;
 }
 
-.grid{
+.grid {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
 }
 
-.slink{
+.slink {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 2rem;
-    text-decoration: none;
-    background: linear-gradient(35deg, #494949, #313131);
-    width: 6rem;
-    height: 6rem;
-    cursor: pointer;
-    transform: scale(0.8);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 2rem;
+  text-decoration: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  transform: scale(0.8);
 
 }
-  
-    h4 {
-      color: white;
-      font-size: 0.8rem;
-    }
-  
-    svg {
-      color: white;
-      font-size: 1.5rem;
-    }
-  
-    .active {
-      background: linear-gradient(to right, #f27121, #e94057)
-    }
+
+h4 {
+  color: white;
+  font-size: 0.8rem;
+}
+
+svg {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.active {
+  background: linear-gradient(to right, #f27121, #e94057)
+}
+
+
+.font-style {
+  margin: 0rem 20rem;
+  position: relative;
+  width: 100%;
+}
+
+input {
+  border: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: none;
+  outline: none;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(100%, -50%);
+  color: white;
+}
 
 
 

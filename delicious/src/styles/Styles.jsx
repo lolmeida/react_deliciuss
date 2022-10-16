@@ -36,13 +36,13 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
 
-    a{
+    a {
       text-decoration: none;
     }
 
-    h4{
-      text-align:center;
-      padding:1rem;
+    h4 {
+      text-align: center;
+      padding: 1rem;
     }
   }
 `;
@@ -61,13 +61,11 @@ export const List = styled.div`
   margin: 2rem, 0rem;
 `;
 
-
 export const Grid = styled.div`
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap:3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
 `;
-
 
 export const SLink = styled(NavLink)`
   display: flex;
@@ -101,5 +99,36 @@ export const SLink = styled(NavLink)`
     svg {
       color: white;
     }
+  }
+`;
+// time in video 1H30
+export const FormStyle = styled.form`
+  margin: 0rem 0rem;
+  position: relative;
+  width: 100%;
+
+  div {
+    width: 100%;
+    position: relative;
+  }
+  input {
+    border: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    width: 100%;
+  
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(100%, -50%);
+    color: white;
   }
 `;
