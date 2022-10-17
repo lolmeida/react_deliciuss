@@ -58,16 +58,11 @@ function Recipe() {
             <h4 dangerouslySetInnerHTML={{ __html: result.instructions }} />
           </div>
         )}
-        {/* <div>
-          <h6 dangerouslySetInnerHTML={{ __html: result.summary }} />
-          <br />
-          <h4 dangerouslySetInnerHTML={{ __html: result.instructions }} />
-        </div> */}
+        
 
         {activeTab === "ingredients" && (
           <div>
-            {/* <h4>Summary:</h4>
-            <h5 dangerouslySetInnerHTML={{ __html: result.summary }} /> */}
+          
             <h4>Ingredients:</h4>
             <ul>
               {result.extendedIngredients.map((e) => (
