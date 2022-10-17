@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrappers = styled.div`
   margin: 4rem 0rem;
@@ -61,7 +62,7 @@ export const List = styled.div`
   margin: 2rem, 0rem;
 `;
 
-export const Grid = styled.div`
+export const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
@@ -121,7 +122,6 @@ export const FormStyle = styled.form`
     border-radius: 3rem;
     outline: none;
     width: 100%;
-  
   }
 
   svg {
@@ -132,3 +132,63 @@ export const FormStyle = styled.form`
     color: white;
   }
 `;
+
+export const DetailWrappers = styled.div`
+  color: brown;
+  margin: 10rem 0rem;
+  margin-bottom: 5rem;
+  display: flex;
+
+  .active {
+    background: linear-gradient(35deg, #494949, #313131);
+    color: white;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    color: brown;
+  }
+
+  li {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: brown;
+  }
+
+  ul {
+    margin-top: 2rem;
+    color: brown;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 1rem 2rem;
+  color: #313131;
+  background: white;
+  border: 2px solid black;
+  margin-right: 2rem;
+  font-weight: 600;
+`;
+
+export const Info = styled.div`
+  margin-left: 10rem;
+`;
+
+export const Logo = styled(Link)`
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Lobster Two", cursive;
+`;
+
+
+export const Nav = styled.div`
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: flex-center;
+  align-items: center;
+  svg {
+    font-size: 2rem;
+  }
+`;
+

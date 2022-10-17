@@ -1,4 +1,3 @@
 
+ export const recipesApiUrl = 'https://api.spoonacular.com/recipes';
 
-
-export const recipesApi = 'https://api.spoonacular.com/recipes';
