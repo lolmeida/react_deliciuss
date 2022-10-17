@@ -27,7 +27,7 @@ function Cuisine() {
     }
   };
 
-  return <Cards result={result} perPage={4} />;
+  return <Cards result={result} perPage={4} title={`Cuisine ...`} />;
 }
 
 export default Cuisine;

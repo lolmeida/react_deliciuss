@@ -6,14 +6,14 @@ import Cards from "./Cards";
 
 function Popular() {
   const obj = {
-    urlApi: `https://api.spoonacular.com/recipes/recipes/random?apiKey=f88bb0a3779247a59b3b0c18bd22b8ed&number=9`,
+    urlApi: `https://api.spoonacular.com/recipes/random?apiKey=f88bb0a3779247a59b3b0c18bd22b8ed&number=9`,
     localStorageName: "popular",
     resultColumnName: "recipe",
   };
 
   const result = RunApiCall(obj);
 
-  return <Cards result={result} perPage={4} />;
+  return <Cards result={result} perPage={4} title={'Most Popular'} />;
 }
 
 export default Popular;

@@ -12,7 +12,7 @@ function Veggie() {
 
   const result = RunApiCall(obj);
 
-  return <Cards result={result} perPage={4} />;
+  return <Cards result={result} perPage={4} title={"Viggies"} />;
 }
 
 export default Veggie;
