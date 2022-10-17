@@ -1,6 +1,8 @@
+
 import "@splidejs/splide/dist/css/splide.min.css";
+
 import { RunApiCall } from "../tools/Funcs";
-import Cards from './Cards';
+import Cards from "./Cards";
 
 function Popular() {
   const obj = {
@@ -11,7 +13,7 @@ function Popular() {
 
   const result = RunApiCall(obj);
 
-  return <Cards result={result} perPage={3} />;
+  return <Cards result={result} perPage={4} />;
 }
 
 export default Popular;

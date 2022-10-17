@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -21,9 +22,11 @@ function Cards({ result, perPage }) {
           return (
             <SplideSlide key={element.id}>
               <Card>
-                <p>{element.title}</p>
-                <img src={element.image} alt={element.title} />
-                <Gradient />
+                <Link to={`/recipe/${element.id}`}>
+                  <p>{element.title}</p>
+                  <img src={element.image} alt={element.title} />
+                  <Gradient />
+                </Link>
               </Card>
             </SplideSlide>
           );
